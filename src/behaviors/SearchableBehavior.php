@@ -156,10 +156,6 @@ class SearchableBehavior extends Behavior
             return false;
         }
 
-        if ($this->owner->propagating) {
-            return false;
-        }
-
         if (ElementHelper::isDraftOrRevision($this->owner)) {
             return false;
         }
