@@ -4,6 +4,7 @@ namespace rias\scout\engines;
 
 use Algolia\AlgoliaSearch\SearchClient;
 use rias\scout\IndexSettings;
+use rias\scout\Scout;
 use rias\scout\ScoutIndex;
 
 abstract class Engine
@@ -35,7 +36,13 @@ abstract class Engine
 
             if (count($splittedObjects) <= 1) {
                 $object['distinctID'] = $object['objectID'];
-                $objectsToSave[] = $object;
+
+                if (Scout::$plugin->getSettings()->useOriginalRecordIfSplitValueIsArrayOfOne) {
+                    $objectsToSave[] = $object;
+                } else {
+                    $objectsToSave[] = count($splittedObjects) === 1 ? $splittedObjects[0] : $object;
+                }
+
                 continue;
             }
 
