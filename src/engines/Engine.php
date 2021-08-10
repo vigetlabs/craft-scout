@@ -35,12 +35,13 @@ abstract class Engine
             $splittedObjects = $this->splitObject($object);
 
             if (count($splittedObjects) <= 1) {
-                $object['distinctID'] = $object['objectID'];
-
                 if (Scout::$plugin->getSettings()->useOriginalRecordIfSplitValueIsArrayOfOne) {
+                    $object['distinctID'] = $object['objectID'];
                     $objectsToSave[] = $object;
                 } else {
-                    $objectsToSave[] = count($splittedObjects) === 1 ? $splittedObjects[0] : $object;
+                    $objectToSave = $splittedObjects[0] ?? $object;
+                    $objectToSave['distinctID'] = $objectToSave['objectID'];
+                    $objectsToSave[] = $objectToSave;
                 }
 
                 continue;
