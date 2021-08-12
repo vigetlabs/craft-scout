@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.4.3 - 20201-08-12
+
+- Make TTR configurable
+
+## 2.4.2 - 20201-08-10
+
+- Fix missing distinctID when not using useOriginalRecordIfSplitValueIsArrayOfOne
+
+## 2.4.1 - 20201-07-29
+
+- Add support for indexing split object without array even when solo
+  using new useOriginalRecordIfSplitValueIsArrayOfOne setting
+
 ## 2.3.1 - 2020-06-16
 
 - Don't include indices in Settings::toArray() by default 
