@@ -1,6 +1,11 @@
 # Scout Changelog
 
 All notable changes to this project will be documented in this file.
+## 2.4.1 - Unreleased
+
+### Fixed
+- CP Utility now works for indexes using the wildcard selector for siteId ([#163](https://github.com/studioespresso/craft-scout/issues/163))
+- CP Utility labels are now translatable
 
 ## 2.4.4 - 2021-09-24
 
