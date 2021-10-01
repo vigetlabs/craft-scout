@@ -1,10 +1,22 @@
 # Scout Changelog
 
 All notable changes to this project will be documented in this file.
+
+## 2.4.4 - 2021-09-24
+
+### Added
+- Make queue priority configurable (Viget)
+
+## 2.4.3 - 2021-08-12
+
+### Added
+- Make TTR configurable (Viget)
+
 ## 2.4.2 - 2021-09-02
 
 ### Added
 - Added `ShouldBeSearchableEvent` event, docs [here](https://github.com/studioespresso/craft-scout/tree/master#shouldbesearchableevent) ([#205](https://github.com/studioespresso/craft-scout/issues/205))
+- Fix missing distinctID when not using useOriginalRecordIfSplitValueIsArrayOfOne (Viget)
 
 ## 2.4.1 - 2021-08-13
 
@@ -13,22 +25,9 @@ All notable changes to this project will be documented in this file.
 - CP Utility labels are now translatable
 - Fixed compatibility with Craft Commerce ([#178](https://github.com/studioespresso/craft-scout/issues/178))
 
-## 2.4.4 - 2021-09-24
-
-- Make queue priority configurable
-
-## 2.4.3 - 2021-08-12
-
-- Make TTR configurable
-
-## 2.4.2 - 2021-08-10
-
-- Fix missing distinctID when not using useOriginalRecordIfSplitValueIsArrayOfOne
-
-## 2.4.1 - 2021-07-29
-
+### Added
 - Add support for indexing split object without array even when solo
-  using new useOriginalRecordIfSplitValueIsArrayOfOne setting
+  using new useOriginalRecordIfSplitValueIsArrayOfOne setting (Viget)
 
 ## 2.3.1 - 2020-06-16
 
