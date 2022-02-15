@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.6.1 - 2021-12-21
+### Fixed
+- MakeSearchable job now uses the index criteria ([#177](https://github.com/studioespresso/craft-scout/pull/177))
+- Disable relations on delete if so configured, should improve performance on larger installs ([#227](https://github.com/studioespresso/craft-scout/pull/227))
+
+## 2.6.0 - 2021-12-06
+### Added
+- Added support for PHP 8.x
+- Added support for algolia/algoliasearch-client-php 3.x
+
+## 2.5.0 - 2021-10-07
+### Added
+- Added ``indexRelations`` config setting (true by default) ([#175](https://github.com/studioespresso/craft-scout/pull/175) & [#205](https://github.com/studioespresso/craft-scout/issues/205))
+- Exposed options to update and dump index settings from the CP utility ([#209](https://github.com/studioespresso/craft-scout/pull/209))
+
 ## 2.4.4 - 2021-09-24
 
 ### Added
@@ -31,7 +46,7 @@ All notable changes to this project will be documented in this file.
 
 ## 2.3.1 - 2020-06-16
 
-- Don't include indices in Settings::toArray() by default 
+- Don't include indices in Settings::toArray() by default
 
 ## 2.3.0 - 2020-04-09
 
@@ -95,7 +110,7 @@ All notable changes to this project will be documented in this file.
 - Revert untested change
 
 ## 1.2.2 - 2019-06-14
-- Fixed an issue with settings call 
+- Fixed an issue with settings call
 
 ## 1.2.1 - 2019-05-17
 ### Added
