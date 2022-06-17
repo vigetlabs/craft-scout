@@ -54,6 +54,9 @@ class Settings extends Model
     /** @var bool */
     public $useOriginalRecordIfSplitValueIsArrayOfOne = true;
 
+    /** @var array */
+    public $relatedElementTypes = [];
+
     public function fields()
     {
         $fields = parent::fields();
